@@ -1,0 +1,69 @@
+.m-switch {
+  position: relative;
+}
+
+.m-switch label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0 solid #bbb;
+  border-radius: var(--border-radius-pill);
+}
+
+.m-switch label .switch-container {
+  border: var(--border-width-thin) solid black;
+  height: 18.78px;
+  width: 36px;
+  border-radius: var(--border-radius-pill);
+  position: relative;
+  padding: 1px;
+}
+
+.m-switch label .switch-round {
+  cursor: pointer;
+  width: 12.52px;
+  height: 12.52px;
+  border-radius: var(--border-radius-pill);
+  background-color: var(--neutral-color-low-pure);
+  display: block;
+  position: absolute;
+  left: 2px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.m-switch input {
+  display: none;
+}
+
+.m-switch.on>label .switch-container {
+  background-color: var(--brand-color-secondary-pure);
+  border-color: var(--brand-color-secondary-pure);
+}
+.m-switch.on>label .switch-round {
+  background-color: var(--neutral-color-high-pure);
+  left: 17px;
+}
+
+/* Disabled */
+.m-switch.disabled>label .switch-container {
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.32);
+}
+.m-switch.disabled>label .switch-round  {
+  background-color: rgba(0, 0, 0, 0.32);
+  cursor: auto;
+}
+.m-switch.disabled + .switch-label {
+  color:  rgba(0, 0, 0, 0.32);
+}
+.m-switch.disabled>label {
+  cursor: auto;
+}
+
+.switch-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  display: flex;
+  color: var(--neutral-color-low-pure);
+}

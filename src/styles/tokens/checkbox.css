@@ -1,0 +1,103 @@
+input[type="checkbox"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border-radius: 2px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+input[type="checkbox"]:hover {
+    background: rgba(0, 0, 0, 0.72);
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--brand-color-secondary-pure);
+    border-color: var(--brand-color-secondary-pure);
+}
+
+input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 5px;
+    background: transparent;
+    top: 20px;
+    left: 2px;
+    border: var(--border-width-thin) solid var(--neutral-color-high-pure);
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.m-checkbox {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.m-checkbox input {
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+.m-checkbox.oncolor input {
+    border-color: var(--neutral-color-high-pure);
+}
+
+.m-checkbox input:checked::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 5px;
+    background: transparent;
+    top: 6px;
+    left: 6px;
+    border: var(--border-width-thin) solid var(--neutral-color-high-pure);
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.m-checkbox.oncolor input:checked::after {
+    border-color: var(--neutral-color-high-pure);
+}
+
+.m-checkbox label {
+    all: unset;
+    color: var(--neutral-color-low-pure);
+    font-size: var(--font-size-xxs);
+    font-weight: var(--font-weight-regular);
+    line-height: 15.96px;
+    cursor: pointer;
+    user-select: none;
+    top: -5px;
+    position: relative;
+}
+.m-checkbox.oncolor label {
+    color: var(--neutral-color-high-pure);
+}
+
+/* DISABLED*/
+input[type="checkbox"]:disabled {
+    cursor: auto;
+  }
+  input[type="checkbox"]:checked:disabled {
+    background-color: var(--neutral-color-low-light);
+    border-color:var(--neutral-color-low-light);
+  }
+  input[type="checkbox"]:checked:disabled + label{
+    cursor: auto;
+  }
+/**/

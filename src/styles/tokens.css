@@ -1,0 +1,128 @@
+@import url('tokens/button.css');
+@import url('tokens/typography.css');
+@import url('tokens/link.css');
+@import url('tokens/tabs.css');
+@import url('tokens/accordion.css');
+@import url('tokens/checkbox.css');
+@import url('tokens/icon-shape.css');
+@import url('tokens/avatar.css');
+@import url('tokens/tag-status.css');
+@import url('tokens/tag-select.css');
+@import url('tokens/input.css');
+@import url('tokens/textarea.css');
+@import url('tokens/step-menu.css');
+@import url('tokens/switch.css');
+@import url('tokens/input-select.css');
+@import url('tokens/card.css');
+@import url('tokens/alert.css');
+@import url('tokens/table.css');
+@import url('tokens/tooltip.css');
+@import url('tokens/shimmer.css');
+@import url('tokens/dropdown.css');
+@import url('tokens/drag-drop.css');
+@import url('tokens/modal.css');
+@import url('tokens/modal-adicionar.css');
+@import url('tokens/modal-adicionar-residuos.css');
+@import url('tokens/modal-perfil.css');
+@import url('tokens/modal-associar.css');
+@import url('tokens/paginated-table.css');
+
+:root {
+    /* COLORS */
+    --brand-color-primary-pure: #1474FF;
+    --brand-color-primary-light: #E5E5E5;
+    --brand-color-primary-medium: #145912;
+    --brand-color-primary-dark: #073B0D;
+    --brand-color-secondary-pure: #357C25;
+    --brand-color-secondary-light: #EFF7ED;
+    --brand-color-secondary-medium: #145912;
+    --brand-color-secondary-dark: #073B0D;
+
+    --highlight-color-pure: #F673AD;
+    --highlight-color-light: #FDD9E9;
+    --highlight-color-medium: #900945;
+    --highlight-color-dark: #430420;
+
+    --neutral-color-low-pure: #000000;
+    --neutral-color-low-light: #A3A3A3;
+    --neutral-color-low-medium: #666666;
+    --neutral-color-low-dark: #292929;
+    --neutral-color-high-pure: #FFFFFF;
+    --neutral-color-high-light: #F5F5F5;
+    --neutral-color-high-medium: #E0E0E0;
+    --neutral-color-high-dark: #CCCCCC;
+
+    --feedback-color-warning-pure: #DA1E28;
+    --feedback-color-warning-light: #FBBBBB;
+    --feedback-color-warning-medium: #A84A4F;
+    --feedback-color-warning-dark: #810C12;
+
+    --feedback-color-helper-pure: #0564A8;
+    --feedback-color-helper-light: #CAF1FA;
+    --feedback-color-helper-medium: #023978;
+    --feedback-color-helper-dark: #001D50;
+
+    --feedback-color-success-pure: #198038;
+    --feedback-color-success-light: #BBFBD1;
+    --feedback-color-success-medium: #469B63;
+    --feedback-color-success-dar: #007729;
+    /* FONT WEIGHT */
+    --font-weight-bold: 700;
+    --font-weight-medium: 600;
+    --font-weight-regular: 400;
+    /* LINE HEIGHT */
+    --line-height-xxl: 200%;
+    --line-height-xl: 170%;
+    --line-height-lg: 150%;
+    --line-height-md: 133%;
+    --line-height-sm: 120%;
+    --line-height-xs: 115%;
+    --line-height-default: 100%;
+    /* FONT SIZE */
+    --font-size-xxxs: 9px;
+    --font-size-xxs: 12px;
+    --font-size-xs: 16px;
+    --font-size-sm: 21.33px;
+    --font-size-md: 28.43px;
+    --font-size-lg: 37.9px;
+    --font-size-xl: 50.52px;
+    --font-size-xxl: 67.34px;
+    --font-size-display: 89.76px;
+    /* BORDER RADIUS */
+    --border-radius-none: 0px;
+    --border-radius-sm: 8px;
+    --border-radius-md: 16px;
+    --border-radius-lg: 24px;
+    --border-radius-pill: 500px;
+    /* BORDER WIDTH */
+    --border-width-none: 0px;
+    --border-width-hairline: 1px;
+    --border-width-thin: 2px;
+    --border-width-thick: 4px;
+    --border-width-heavy: 8px;
+    /* SPACING */
+    --spacing-quarck: 4px;
+    --spacing-nano: 8px;
+    --spacing-xxxs: 16px;
+    --spacing-xxs: 24px;
+    --spacing-xs: 32px;
+    --spacing-sm: 40px;
+    --spacing-md: 48px;
+    --spacing-lg: 56px;
+    --spacing-xl: 64px;
+    --spacing-xxl: 80px;
+    --spacing-xxxl: 120px;
+    --spacing-huge: 160px;
+    --spacing-gigant: 200px;
+    /* OPACITY */
+    --opacity-level-semiopaque: .72;
+    --opacity-level-intense: .64;
+    --opacity-level-medium: .32;
+    --opacity-level-light: .16;
+    --opacity-level-semitransparent: .08;
+    /* Shadow */
+    --shadow-level-1: 0px 4px 8px;
+    --shadow-level-2: 0px 8px 24px;
+    --shadow-level-3: 0px 16px 32px;
+    --shadow-level-4: 0px 16px 24px;
+}

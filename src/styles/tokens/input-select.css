@@ -1,0 +1,20 @@
+.m-input-select {
+    position: relative;
+    border-radius: var(--border-radius-md);
+
+  
+}
+
+.m-input-select label {
+    display: block;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 4px !important;
+    
+} 
+
+.m-input-select .error-message {
+    color: var(--feedback-color-warning-medium);
+    margin-top: 2px;
+   
+    
+}

@@ -1,0 +1,114 @@
+.m-heading {
+    font-size: var(--font-size-display);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-default);
+    color: var(--neutral-color-low-pure);
+}
+
+.m-heading.display {
+    font-size: var(--font-size-display);
+}
+
+.m-heading.x-large {
+    font-size: var(--font-size-xxl);
+}
+
+.m-heading.large {
+    font-size: var(--font-size-xl);
+}
+
+.m-heading.medium {
+    font-size: var(--font-size-lg);
+}
+
+.m-heading.small {
+    font-size: var(--font-size-md);
+}
+
+.m-heading.x-small {
+    font-size: var(--font-size-xs);
+}
+
+@media screen and (max-width: 1023px) {
+    .m-heading.display {
+        font-size: var(--font-size-xxl);
+    }
+
+    .m-heading.x-large {
+        font-size: var(--font-size-xl);
+    }
+
+    .m-heading.large {
+        font-size: var(--font-size-lg);
+    }
+
+    .m-heading.medium {
+        font-size: var(--font-size-md);
+    }
+
+    .m-heading.small {
+        font-size: var(--font-size-xs);
+    }
+
+    .m-heading.x-small {
+        font-size: var(--font-size-xxs);
+    }
+}
+
+
+.m-subtitle {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-lg);
+    color: var(--neutral-color-low-pure);
+}
+
+.m-subtitle.large {
+    font-size: var(--font-size-md);
+}
+
+.m-subtitle.small {
+    font-size: var(--font-size-sm);
+}
+
+
+.m-paragraph {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-sm);
+    opacity: var(--opacity-level-semiopaque);
+}
+
+.m-paragraph.large {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+}
+
+.m-paragraph.small {
+    font-size: var(--font-size-xs);
+    line-height: var(--line-height-lg);
+}
+
+.m-caption {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-xxs);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-md);
+    color: var(--neutral-color-low-pure);
+}
+
+.m-caption.large {
+    font-size: var(--font-size-xxs);
+}
+
+.m-caption.small {
+    font-size: var(--font-size-xxxs);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}

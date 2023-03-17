@@ -1,0 +1,98 @@
+.pnotify-container {
+    background-color: var(--neutral-color-high-pure);
+    border-width: var(--border-width-hairline);
+    border-color: var(--neutral-color-high-medium);
+    box-shadow: var(--shadow-level-2) rgba(--neutral-color-low-pure, --opacity-level-semitransparent);
+    width: 420px !important;
+    padding: 16px !important;
+    border-radius: var(--border-radius-sm);
+}
+
+.pnotify-title {
+    flex-grow: 0;
+    display: inline-flex !important;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: var(--font-size-md )!important;
+    line-height: var(--line-height-default);
+    font-weight: var(--font-weight-bold);
+    color: var(--neutral-color-low-pure);
+    height: 48px;
+    margin-left: 0px !important;
+}
+
+.pnotify-text {
+    font-size: var(--font-size-xs) !important;
+    line-height: var(--line-height-lg);
+    font-weight: var(--font-weight-regular);
+    color: var(--neutral-color-low-medium);
+    margin-left: 42px !important;
+    overflow-x: hidden;
+}
+
+.pnotify-icon span {
+    top: 0px !important;
+    font-size: 48px;
+    margin-right: 16px;
+    
+} 
+
+.pnotify .pnotify-icon span {
+    flex-grow: 0;
+    display: inline-flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+.pnotify .pnotify-icon span::before {
+    font-family: 'Material Icons';
+    font-size: 24px;
+}
+
+.pnotify.success .pnotify-icon span {
+    background: var(--feedback-color-success-light);
+    color: var(--feedback-color-success-medium);
+}
+.pnotify.success .pnotify-icon span::before {
+    content: 'check'
+}
+
+.pnotify.error .pnotify-icon span {
+    background: var(--feedback-color-warning-light);
+    color: var(--feedback-color-warning-medium);
+}
+.pnotify.error .pnotify-icon span::before {
+    content: 'error';
+}
+
+.pnotify.notice .pnotify-icon span {
+    background: var(--feedback-color-helper-light);
+    color: var(--feedback-color-helper-medium);
+}
+.pnotify.notice .pnotify-icon span::before {
+    content: 'warning';
+}
+
+.pnotify-closer {
+    height: 40px;
+    flex-grow: 0;
+    display: inline-flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pnotify-closer span:hover {
+    opacity: var(--opacity-level-intense);
+}
+
+.pnotify-closer span::before {
+    content: 'close';
+    font-family: 'Material Icons';
+}

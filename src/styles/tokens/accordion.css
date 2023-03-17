@@ -1,0 +1,60 @@
+.m-accordion {
+    padding: 16px;
+    border-bottom: 2px solid var(--neutral-color-low-pure);
+}
+
+.m-accordion, .m-accordion .m-heading {
+    color: var(--neutral-color-low-pure);
+}
+
+.m-accordion.oncolor {
+    border-bottom: 2px solid var(--neutral-color-high-pure);
+}
+.m-accordion.oncolor, .m-accordion.oncolor .m-heading {
+    color: var(--neutral-color-high-pure);
+}
+
+
+.m-accordion .content {
+    color: rgba(0, 0, 0, 0.722);
+    -moz-transition: height .5s;
+    -ms-transition: height .5s;
+    -o-transition: height .5s;
+    -webkit-transition: height .5s;
+    overflow: hidden;
+}
+
+.m-accordion .content > div {
+    padding: 16px;
+}
+
+.m-accordion.oncolor .content {
+    color: rgba(255, 255, 255, 0.722);
+}
+
+.m-accordion > .d-flex {
+    cursor: pointer;
+}
+
+
+.m-accordion .m-btn-icon {
+    transition: transform 0.3s ease-out;
+    transform: rotate(0deg)
+}
+.m-accordion .m-btn-icon.open {
+    transform: rotate(45deg)
+}
+
+.m-accordion.oncolor .m-btn-icon:hover {
+    outline: 0;
+    border-radius: var(--border-radius-pill);
+    color: var(--neutral-color-high-pure);
+    background-color: rgba(255, 255, 255, var(--opacity-level-light));
+}
+
+@media all and (max-width: 1000px) {
+    .m-accordion .content {
+        padding-left: 0;
+    }
+}
+

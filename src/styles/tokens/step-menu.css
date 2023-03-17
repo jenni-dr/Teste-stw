@@ -1,0 +1,43 @@
+.step-menu {
+
+}
+
+.step-menu .step {
+    border: var(--border-width-hairline) solid var(--neutral-color-low-pure);
+    border-radius: var(--border-radius-pill);
+    padding: var(--spacing-quarck) var(--spacing-xxxs);
+    min-width: 40px;
+}
+
+.step-menu .step > span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.step-menu .step.active {
+    background-color: var(--neutral-color-low-pure);
+}
+.step-menu .step.active > span {
+    color: var(--neutral-color-high-pure);
+    font-weight: 700;
+}
+.step-menu .step.done {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    border-color: var(--brand-color-secondary-pure);
+    background-color: var(--brand-color-secondary-pure);
+    padding: 3px;
+}
+.step-menu .step.done > i {
+    color: var(--neutral-color-high-pure);
+}
+
+.step-menu .separator {
+    width: 40px;
+    height: 2px;
+    border-radius: var(--border-radius-pill);
+    background-color: var(--neutral-color-low-pure);
+    margin: 0 var(--spacing-nano);
+}

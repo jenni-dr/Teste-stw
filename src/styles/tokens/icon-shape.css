@@ -1,0 +1,63 @@
+.m-icon-shape {
+    flex-grow: 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--brand-color-secondary-medium);
+    background-color: var(--brand-color-secondary-light);
+    border-width: var(--border-width-none);
+    border-radius: var(--border-radius-pill);
+    width: 32px;
+    height: 32px;
+    
+}
+.m-icon-shape > i {
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
+    color: var(--brand-color-secondary-medium);
+    font-size: var(--font-size-xs);
+}
+
+
+.m-icon-shape.md {
+    width: 48px;
+    height: 48px;
+}
+.m-icon-shape.md > i {
+    font-size: 24px;
+}
+
+.m-icon-shape.lg {
+    width: 64px;
+    height: 64px;
+}
+.m-icon-shape.lg > i {
+    font-size: 32px;
+}
+
+.m-icon-shape.helper {
+    background: var(--feedback-color-helper-light)
+}
+.m-icon-shape.helper > i {
+    color: var(--feedback-color-helper-medium)
+}
+
+.m-icon-shape.warning {
+    background: var(--feedback-color-warning-light)
+}
+.m-icon-shape.warning > i {
+    color: var(--feedback-color-warning-medium)
+}
+
+.m-icon-shape.success {
+    background: var(--feedback-color-success-light)
+}
+.m-icon-shape.success > i {
+    color: var(--feedback-color-success-medium)
+}

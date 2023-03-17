@@ -1,0 +1,62 @@
+.m-tag-select {
+    background-color: transparent;
+    border-radius: var(--border-radius-pill);
+    border: var(--border-width-hairline) solid var(--neutral-color-low-pure);
+    color: var(--neutral-color-low-pure);
+    font-size: var(--font-size-xxs);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-md);
+    min-width: 64px;
+    height: 28px;
+    padding: 0px 16px;
+    display: inline-flex;
+    align-items: center;
+}
+ 
+.m-tag-select:not(.disabled):hover,
+.m-tag-select:not(.disabled).hover, 
+.m-tag-select:not(.disabled):focus-visible,
+.m-tag-select:not(.disabled).focus, 
+.m-tag-select:not(.disabled):active,
+.m-tag-select:not(.disabled).active {
+    background-color: var(--brand-color-primary-pure) !important;
+    border-color:  var(--brand-color-primary-pure) !important;
+    color: var(--neutral-color-high-pure) !important;
+    border-width: var(--border-width-hairline) !important;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+.m-tag-select:not(.disabled):focus-visible, .m-tag-select:not(.disabled).focus {
+    background-color: var(--brand-color-primary-pure) !important;
+    border-color:  var(--brand-color-primary-pure) !important;
+    color: var(--neutral-color-high-pure) !important;
+    border-width: var(--border-width-hairline) !important;
+}
+
+.m-tag-select.disabled {
+    background: rgba(0, 0, 0, var(--opacity-level-semitransparent));
+    opacity: var(--opacity-level-medium);
+    cursor: not-allowed;
+    border-width: var(--border-width-none);
+}
+
+.background-secondary.m-tag-select {
+    border-color: var(--neutral-color-high-pure);
+    color: var(--neutral-color-high-pure);
+}
+
+.background-secondary.m-tag-select:not(.disabled):hover,
+.background-secondary.m-tag-select:not(.disabled).hover,
+.background-secondary.m-tag-select:not(.disabled):focus-visible,
+.background-secondary.m-tag-select:not(.disabled).focus, 
+.background-secondary.m-tag-select:not(.disabled):active,
+.background-secondary.m-tag-select:not(.disabled).active {
+    background-color: var(--neutral-color-high-pure);
+    color: var(--brand-color-secondary-pure);
+}
+
+.background-secondary.m-tag-select.disabled {
+    color: var(--neutral-color-high-pure);
+}

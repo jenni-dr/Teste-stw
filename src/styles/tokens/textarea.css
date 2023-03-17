@@ -1,0 +1,84 @@
+.m-input-textarea label {
+    display: block;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 4px;
+}
+
+.m-input-textarea textarea {
+    background-color:var(--neutral-color-high-light) ;
+    border-radius: var(--border-radius-sm);
+    border-width: var(--border-width-hairline);
+    color: var(--neutral-color-low-pure);
+    font-size: var(--font-size-xs);
+    line-height: var(--line-height-default);
+    padding: 16px;
+    max-width: 100%;
+    min-width: 100%;
+    border: none;
+}
+
+.m-input-textarea textarea::placeholder {
+    opacity: var(--opacity-level-intense);
+}
+
+.m-input-textarea textarea, 
+.m-input-textarea textarea::placeholder {
+    font-weight: var(--font-weight-regular);
+}
+
+.m-input-textarea:not(.disabled):not(.error):not(.readonly) textarea:hover {
+    background: rgba(0, 0, 0, var(--opacity-level-semitransparent));
+}
+
+.m-input-textarea:not(.disabled):not(.error):not(.readonly) textarea::placeholder {
+    color: var(--neutral-color-low-pure);
+}
+
+.m-input-textarea:not(.disabled):not(.error):not(.readonly) textarea:focus-visible {
+    outline: 0;
+    border-width: var(--border-width-hairline);
+    /* border-color: var(--highlight-color-pure); */
+    background: rgba(0, 0, 0, var(--opacity-level-semitransparent));
+}
+
+.m-input-textarea.disabled, .m-input-textarea.readonly {
+    background-color: transparent;
+    opacity: var(--opacity-level-medium);
+    pointer-events: none !important;
+}
+.m-input-textarea.disabled *, .m-input-textarea.readonly * {
+    pointer-events: none !important;
+}
+
+.m-input-textarea.disabled textarea:focus-visible, 
+.m-input-textarea.readonly textarea:focus-visible {
+    outline: 0;
+}
+
+.m-input-textarea.readonly {
+    opacity: 1;
+}
+.m-input-textarea.readonly textarea {
+    background: rgba(0, 0, 0, var(--opacity-level-semitransparent));
+    opacity: var(--opacity-level-medium);
+}
+
+
+.m-input-textarea.error textarea{
+    background-color: var(--feedback-color-helper-light);
+    border-color: var(--feedback-color-helper-pure);
+    outline: 0;
+}
+
+.m-input-textarea.error.helper {
+    display: block;
+    color: var(--neutral-color-low-medium);
+    font-size: var(--font-size-xxs);
+    padding-top: 8px;
+}
+
+
+.m-input-textarea .error-message {
+    color: var(--feedback-color-warning-medium);
+    margin-top: 2px;
+}

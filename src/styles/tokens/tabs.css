@@ -1,0 +1,23 @@
+.m-tabs {
+    width: 100%;
+}
+
+.m-tab {
+    padding: 8px 16px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--neutral-color-low-pure);
+    cursor: pointer;
+}
+
+.m-tab.oncolor {
+    color: var(--neutral-color-high-pure);
+}
+
+.m-tab.active {
+    border-bottom: var(--border-width-thin) solid var(--brand-color-secondary-pure);
+}
+
+.m-tab.oncolor.active {
+    border-bottom-color: var(--neutral-color-high-pure);
+}

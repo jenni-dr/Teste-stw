@@ -1,0 +1,27 @@
+.m-drag-drop {
+    background-color:var(--neutral-color-high-light) ;
+    border-width: var(--border-width-thin);
+    border-radius: var(--border-radius-md);
+    border-color: var(--neutral-color-low-pure);
+    border-style: dashed;
+    max-width: unset;
+    min-height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.m-drag-drop.over {
+    background-color: rgba(147, 147, 147, 0.5);
+}
+
+.attachment-preview {
+    display: flex;
+    align-items: center;
+}
+
+.attachment-preview .m-paragraph {
+    opacity: 1;
+    color: var(--neutral-color-low-pure);
+}

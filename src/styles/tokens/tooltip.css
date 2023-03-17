@@ -1,0 +1,14 @@
+.m-tooltip {
+    padding: var(--spacing-xxxs) !important;
+    background-color: var(--neutral-color-low-dark) !important;
+    border-radius: var(--border-radius-sm) !important;
+    font-size: 12px !important;
+    line-height: 133%;
+    font-family: 'Archivo', sans-serif;
+    min-width: 143px;
+    border-width: 0px !important;
+}
+
+.m-tooltip::after {
+    border-top-color: var(--neutral-color-low-dark) !important;
+}

@@ -1,0 +1,54 @@
+.m-tag-status {
+    cursor: default !important;
+    border-radius: var(--border-radius-pill);
+    border-width: var(--border-width-none);
+    font-size: var(--font-size-xxs);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-md);
+    min-height: 24px;
+    min-width: 48px;
+    padding: 4px 16px;
+    display: inline-block;
+}
+
+.m-tag-status.highlight {
+    background-color: var(--highlight-color-pure);
+}
+
+.m-tag-status.outlined {
+    background: transparent !important;
+    border: var(--border-width-hairline) solid var(--neutral-color-low-pure);
+    color: var(--neutral-color-low-pure);
+}
+
+.m-tag-status.helper {
+    color: var(--feedback-color-helper-dark);
+    background-color: var(--feedback-color-helper-light);
+}
+.m-tag-status.helper.outlined {
+    border-color: var(--feedback-color-helper-light);
+}
+
+.m-tag-status.warning {
+    background-color: var(--feedback-color-warning-light);
+    color: var(--feedback-color-warning-dark);
+}
+.m-tag-status.warning.outlined {
+    border-color: var(--feedback-color-warning-light);
+}
+
+.m-tag-status.success {
+    background-color: var(--feedback-color-success-light);
+    color: var(--feedback-color-success-dark);
+}
+.m-tag-status.success.outlined {
+    border-color: var(--feedback-color-success-light);
+}
+
+.m-tag-status.secondary {
+    background-color: var(--brand-color-secondary-light);
+    color: var(--brand-color-secondary-dark);
+}
+.m-tag-status.secondary .outlined {
+    border-color: var(--brand-color-secondary-light);
+}

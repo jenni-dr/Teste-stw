@@ -1,0 +1,34 @@
+.m-link {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border-width: 0;
+    color: var(--neutral-color-low-pure);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-default);
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+
+.m-link.oncolor {
+    color: var(--neutral-color-high-pure);
+}
+
+.m-link.icon {
+    text-decoration: none;
+}
+
+.m-link i {
+    margin-left: 6.67px;
+    color: inherit;
+    font-size: var(--font-size-sm);
+}
